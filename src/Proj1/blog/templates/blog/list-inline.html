@@ -1,0 +1,16 @@
+<!--  
+<li><a href="{{ post_obj.get_absolute_url }}">{{ post_obj.title }}</a></li>
+-->
+<div class='card'>
+    <div class='card-body'>
+        {% if post_obj.image %}
+        <img class="rounded-circle account-img" width="50" src="{{ post_obj.image.url }}" class='card-img-top' />
+
+
+        {% endif %}
+        <h5 class='card-title'><a href="{{ post_obj.get_absolute_url }}">{{ post_obj.title }}</a></h5>
+        <p class='card-text'>{{ post_obj.content}}</p>
+
+    </div>
+
+</div>

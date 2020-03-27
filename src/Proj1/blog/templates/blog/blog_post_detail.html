@@ -1,0 +1,12 @@
+{% extends '../base_blog.html' %} {% block content %}
+<h3>{{ object.title}}</h3>
+<p>{{ object.content}}</p>
+{% if request.user.is_authenticated %}
+<div>
+    <a href="{{ object.get_edit_url }}">You want to Edit</a>
+</div>
+
+
+{% endif %}
+
+{% endblock %}

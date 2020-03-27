@@ -1,0 +1,7 @@
+{% extends '../base_blog.html' %} {% block content %}
+
+
+{%if user.is_authenticated %}
+<h3>This is my Blog</h3>
+<p>My hobby is writing .......</p>
+{% endif%} {% endblock %}
